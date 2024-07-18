@@ -34,14 +34,16 @@ if st.button("くじを引く"):
         <source src="data:audio/mp3;base64,{audio_base64}" type="audio/mp3">
     </audio>
     <script>
-    var audio = document.getElementById('drumroll_audio');
-    audio.play();
+    document.getElementById('drumroll_audio').play();
     </script>
     """
     st.markdown(audio_html, unsafe_allow_html=True)
     
-    # 1秒間の待機
+    # 3秒間の待機
     time.sleep(3)
+    
+    # 乱数シードをリセット
+    random.seed()
     
     # くじを引く
     result = draw_lottery(df.to_dict(orient='records'))
