@@ -54,4 +54,4 @@ if st.button("くじを引く"):
 
     # アンケートリンクの表示
     st.markdown("### アンケートにご協力ください")
-    st.markdown("[アンケートに答える](https://example.com/survey)")
+    st.markdown("[アンケートに答える](https://forms.office.com/Pages/ResponsePage.aspx?id=TsfOV2aa0UWbxL4BE5qgbxYz7OVWy3pJpMLKQgWa3ztURU5INzNIVjdMV1VKUDlOTFhTSzBIUVY0RS4u)")
